@@ -2,17 +2,24 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     sass: {
-      all: {
+      normal: {
+        options: {
+          style: "expanded",
+          sourcemap: "none"
+        },
+        files: [{
+          src: ["sass/skyblue.scss"],
+          dest: "css/skyblue.css"
+        }]
+      },
+      min: {
         options: {
           style: "compressed",
           sourcemap: "none"
         },
         files: [{
-          expand: true,
-          cwd: "sass/",
-          src: ["*.scss"],
-          dest: "css/",
-          ext: ".css"
+          src: ["sass/skyblue.scss"],
+          dest: "css/skyblue.min.css"
         }]
       }
     }
@@ -20,5 +27,5 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks("grunt-contrib-sass");
 
-  grunt.registerTask("default", ["sass"]);
+  grunt.registerTask("default", ["sass:normal", "sass:min"]);
 };
