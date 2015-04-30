@@ -1,24 +1,14 @@
-/*
- *
- * SkyBlue Sass by Stanko
- *
- * Built and maintained with a lots of love
- * http://null-object.com
- *
- */
+/*! SkyBlue Sass by Stanko | http://null-object.com */
 
 // Core variables and mixins
 @import "skyblue/variables"; // Modify this for custom colors, font-sizes, etc
 @import "skyblue/mixins";
 
-
 // CSS Reset
 @import "skyblue/reset";
 
-
 // Grid system and page structure
 @import "skyblue/grid";
-
 
 // Base CSS
 @import "skyblue/typography";
@@ -33,7 +23,6 @@
 
 // Main
 @import "skyblue/main";
-
 
 // Helpers at the end to override
 @import "skyblue/helpers";
