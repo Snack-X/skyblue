@@ -1,11 +1,11 @@
 // Grays
-$gray7:	#111111 !default;
-$gray6:	#333333 !default;
-$gray5:	#555555 !default;
-$gray4:	#777777 !default;
-$gray3:	#999999 !default;
-$gray2:	#dddddd !default;
-$gray1:	#f7f7f7 !default;
+$gray7: #111111 !default;
+$gray6: #333333 !default;
+$gray5: #555555 !default;
+$gray4: #777777 !default;
+$gray3: #999999 !default;
+$gray2: #dddddd !default;
+$gray1: #f7f7f7 !default;
 
 // colors
 $body-background:  #ffffff !default;
@@ -23,9 +23,10 @@ $main-grey-color:  #7f8184 !default;
 $color-diff:       #151515 !default;
 
 // Defaults
-$font-family:     "Open Sans", "Helvetica Neue", Helvetica,
-                  NanumBarunGothic, Nanum Gothic, "Apple SD Gothic Neo",
-                  Dotum, Arial, sans-serif !default;
+$font-family:     "Open Sans", "Helvetica Neue", Helvetica, Arial,
+                  "Apple SD Gothic Neo", "Noto Sans Korean", "본고딕",
+                  NanumBarunGothic, Nanum Gothic, "KoPubDotum Medium",
+                  "Malgun Gothic", Dotum, sans-serif !default;
 $font-size:       16px !default;
 $font-weight:     normal !default;
 $line-height:     1.5em !default;
@@ -34,11 +35,11 @@ $transition-time: 0.25s !default;
 
 // Code
 $code-font-family: NanumGothicCoding, "Deja-vu Sans Mono", Monaco, Menlo,
-                  Consolas, "Courier New", monospace !default;
-$code-font-size:  13px !default;
-$code-color:      #333333;
-$code-bg:         #f7f7f9;
-$code-border:     #e1e1e8;
+                   Consolas, "Courier New", monospace !default;
+$code-font-size:   13px !default;
+$code-color:       #333333;
+$code-bg:          #f7f7f9;
+$code-border:      #e1e1e8;
 
 // Tables
 $table-border-color:     $gray2 !default;
@@ -79,6 +80,7 @@ $border-radius:     3px !default;
 $big-border-radius: 1000px !default;
 
 // Custom colors
+$black: #000000 !default;
 $white: #ffffff !default;
 
 // From base16-solarized
