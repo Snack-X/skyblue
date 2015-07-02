@@ -115,6 +115,26 @@ label {
   }
 }
 
+.fancy-radio,
+.fancy-checkbox{
+  position: relative;
+  cursor: pointer;
+
+  input{
+    opacity: 0;
+    position: absolute;
+  }
+
+  span:before,
+  span:after{
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all 0.25s;
+  }
+}
+
 $checkbox-circle-size: $checkbox-height - 2 !default;
 $checkbox-top:         ($font-size * 1.5 - $checkbox-height) / 2 !default;
 

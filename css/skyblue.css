@@ -866,7 +866,7 @@ code {
 }
 
 button, input[type="submit"], input[type="button"] {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, NanumBarunGothic, Nanum Gothic, "Apple SD Gothic Neo", Dotum, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans Korean", "본고딕", NanumBarunGothic, Nanum Gothic, "KoPubDotum Medium", "Malgun Gothic", Dotum, sans-serif;
   font-weight: normal;
   font-size: 1em;
   -webkit-appearance: none;
@@ -1080,7 +1080,7 @@ input[type="text"].form-control, input[type="password"].form-control, input[type
   max-width: 100%;
   padding: 0.5em;
   margin-bottom: 1em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, NanumBarunGothic, Nanum Gothic, "Apple SD Gothic Neo", Dotum, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans Korean", "본고딕", NanumBarunGothic, Nanum Gothic, "KoPubDotum Medium", "Malgun Gothic", Dotum, sans-serif;
   font-weight: normal;
   color: #555555;
   font-size: 1em;
@@ -1198,6 +1198,27 @@ label.success, .success label {
 }
 .form.form-horizontal .checkbox-group label, .form.form-horizontal .radio-group label {
   display: block;
+}
+
+.fancy-radio,
+.fancy-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+.fancy-radio input,
+.fancy-checkbox input {
+  opacity: 0;
+  position: absolute;
+}
+.fancy-radio span:before,
+.fancy-radio span:after,
+.fancy-checkbox span:before,
+.fancy-checkbox span:after {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.25s;
 }
 
 .fancy-checkbox {
@@ -2219,7 +2240,7 @@ th {
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, NanumBarunGothic, Nanum Gothic, "Apple SD Gothic Neo", Dotum, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans Korean", "본고딕", NanumBarunGothic, Nanum Gothic, "KoPubDotum Medium", "Malgun Gothic", Dotum, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5em;
